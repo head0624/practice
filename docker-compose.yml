@@ -5,14 +5,16 @@ services:
       - static_volume:/usr/src/app/_static
     ports:
       - 80:80
+    depends_on:
+      - web
   web:
     build: .
     command: gunicorn mysite.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./:/usr/src/app/
       - static_volume:/usr/src/app/_static
-    ports:
-      - 8000:8000
+    expose:
+      - "8000"
     env_file:
       - ./.env.dev
 volumes:
