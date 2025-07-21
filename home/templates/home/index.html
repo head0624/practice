@@ -1,0 +1,177 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Instant Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <!-- <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet"> -->
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet"> 
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet"> 
+
+  <!-- Main CSS File -->
+  <link href="{% static '/css/main.css'%}" rel="stylesheet">
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Instant</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">메인</a></li>
+          <li><a href="#about">소개</a></li>
+          <li><a href="#features">기능</a></li>
+          <li><a href="#services">서비스</a></li>
+          <li><a href="#pricing">가격</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">문의</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#">시작</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="hero-wrapper">
+
+          <div class="hero-main-content text-center">
+            <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="200">
+              이곳에서 당신의 목표를 이루어내세요<br>
+              <span class="typed" data-typed-items="Advanced Analytics,Seamless Integration,Robust Security"></span>
+            </h1>
+
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+              우리의 혁신적인 플랫폼은 기업이 생산성을 높이고, 다양한 산업 현장에서 탁월한 운영 효율성을 달성하도록 돕습니다.
+            </p>
+
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+              <a href="#" class="action-btn primary">
+                <span>더 많은 상품을 확인하세요</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="action-btn secondary glightbox">
+                <i class="bi bi-play-circle"></i>
+                <span>데모 영상 시청</span>
+              </a>
+            </div>
+
+            <div class="hero-image-showcase" data-aos="fade-up" data-aos-delay="500">
+              <div class="image-wrapper">
+                <img src="{% static '/assets/img/about/about-18.webp'%}" class="img-fluid" alt="Strategic Overview">
+                <div class="floating-card card-1" data-aos="fade-right" data-aos-delay="600">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <div class="card-info">
+                      <h4><span data-purecounter-start="0" data-purecounter-end="89" class="purecounter"></span>%</h4>
+                      <p>성공 기준</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="floating-card card-2" data-aos="fade-left" data-aos-delay="700">
+                  <div class="card-content">
+                    <div class="card-icon">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="card-info">
+                      <h4><span data-purecounter-start="0" data-purecounter-end="500" class="purecounter"></span>+</h4>
+                      <p>만족 고객</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+    {% include 'about/about.html' %}
+    
+    {% include 'features/view.html' %}
+
+    {% include 'features/tap.html' %}
+
+    {% include 'services/view.html' %}
+
+    {% include 'services/action.html' %}
+    
+    {% include 'stats/view.html' %}
+    
+    {% include 'faq/view.html' %}
+
+    {% include 'price/view.html' %}
+
+    {% include 'team/view.html' %}
+
+    {% include 'concat/view.html' %}
+
+    {% include 'home/footer.html' %}
+    
+
+
+  </main>
+</body>
+
+  
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static '/js/main.js' %}"></script>
+
+</html>

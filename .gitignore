@@ -1,0 +1,10 @@
+# 환경 변수·비밀
+.env*
+# SQLite 등 로컬 DB
+*.sqlite3
+# 빌드 산출(static collect 결과)
+_static/
+# 파이썬 캐시·IDE
+__pycache__/
+*.pyc
+.idea/ .vscode/

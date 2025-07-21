@@ -1,0 +1,122 @@
+    {% load static %}
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>문의</h2>
+        <p>규모에 맞춘 합리적인 가격으로 바로 시작하세요.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-info-section">
+              <div class="info-header">
+                <h3>지금 바로 소통하세요</h3>
+                <p>실시간 인사이트로 의사결정을 가속화하세요.</p>
+              </div>
+
+              <div class="contact-info-grid">
+                <div class="info-item" data-aos="zoom-in" data-aos-delay="250">
+                  <div class="info-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="info-content">
+                    <h5>사무실에 오시는 길</h5>
+                    <p>(07548) 서울시 강서구 화곡로 416 , 1513호 (가양역 더스카이밸리 5차 지식산업센터)</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="info-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div class="info-content">
+                    <h5>이메일 주소</h5>
+                    <p>ksy1785k@clipdata.co.kr</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="info-icon">
+                    <i class="bi bi-telephone-fill"></i>
+                  </div>
+                  <div class="info-content">
+                    <h5>전화번호</h5>
+                    <p>010-1234-5678</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="info-icon">
+                    <i class="bi bi-clock-fill"></i>
+                  </div>
+                  <div class="info-content">
+                    <h5>업무시간</h5>
+                    <p>월요일~금요일: 9AM - 6PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-contact" data-aos="fade-up" data-aos-delay="450">
+                <h5>여정에 동참하세요</h5>
+                <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="contact-form-wrapper">
+              <div class="form-header">
+                <h3>문의 보내기</h3>
+                <p>언제든 궁금하신 점을 남겨주세요.빠르고 친절하게 답변 드리겠습니다.</p>
+              </div>
+
+              <form action="/concat/save/" method="post" class="php-email-form">
+                {% csrf_token %}
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">성함</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="이름을 입력하세요." required="">
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">이메일 주소</label>
+                  <input type="email" class="form-control" name="email" id="contactEmail" placeholder="이메일을 입력하세요." required="">
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactPhone" class="form-label">전화번호</label>
+                  <input type="tel" class="form-control" name="phone_number" id="contactPhone" placeholder="전화번호를 입력하세요.">
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactSubject" class="form-label">제목</label>
+                  <input type="text" class="form-control" name="subject" id="contactSubject" placeholder="제목을 입력하세요." required="">
+                </div>
+
+                <div class="mb-4">
+                  <label for="contactMessage" class="form-label">메시지</label>
+                  <textarea class="form-control message-textarea" name="message" id="contactMessage" rows="5" placeholder="메시지를 입력하세요." required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="ConcatBtn">
+                  <span>메시지 전송</span>
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
