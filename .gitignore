@@ -1,5 +1,5 @@
 # 환경 변수·비밀
-.env*
+.env.prod
 # SQLite 등 로컬 DB
 *.sqlite3
 # 빌드 산출(static collect 결과)
